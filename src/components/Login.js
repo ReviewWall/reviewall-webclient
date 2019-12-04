@@ -86,8 +86,10 @@ class Login extends Component{
                        </ul>
 
                        <button id='kaydetButton' className="btn btn-secondary btn-large" style={this.styles.button} > 
-                           Kaydet
+                           Login
                        </button>
+
+                       <li><p className="message">Not registered? <a href="/register">Create an account</a></p></li>
                    </div>
                </form>
            </div>
