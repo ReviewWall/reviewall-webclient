@@ -8,6 +8,8 @@ import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
+
+
 const useStyles = makeStyles(theme => ({
     toolbar: {
         borderBottom: `1px solid ${theme.palette.divider}`,
@@ -24,6 +26,7 @@ const useStyles = makeStyles(theme => ({
         flexShrink: 0,
     },
 }));
+
 
 export default function Header(props) {
     const classes = useStyles();
@@ -46,12 +49,11 @@ export default function Header(props) {
                 <IconButton>
                     <SearchIcon />
                 </IconButton>
-                <Button variant="outlined" size="small">
-                <Link href="register">Sign up</Link>
+                <Button variant="outlined" size="small" >
+                    <Link href="profile">Profile</Link>
+                    
                 </Button>
-                <Button variant="outlined" size="small">
-                    <Link href="login">Sign in</Link>
-                </Button>
+
             </Toolbar>
             <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
                 {sections.map(section => (

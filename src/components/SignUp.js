@@ -109,7 +109,7 @@ class Register extends Component{
                                         </button>
                                     </div>
 
-                                    <p className="text-center">Have an account? <a href="/login">Log In</a></p>
+                                    <p className="text-center">Have an account? <a href="/login">Sign In</a></p>
                                 </form>
                             </article>
                         </div>
