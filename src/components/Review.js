@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Commentbox from "./homeComponents/CommentBox";
+import Commentbox from "./CommentBox";
 import NewHeader from "./blog/NewHeader";
 import CssBaseline from "@material-ui/core/CssBaseline";
 

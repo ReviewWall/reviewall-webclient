@@ -11,7 +11,7 @@ import Button from '@material-ui/core/Button';
 import NewHeader from "./blog/NewHeader";
 
 const sections = [
-  { title: 'Home', url: '/' }
+  { title: 'Home', url: '/enter' }
 ];
 
 const styles = {
