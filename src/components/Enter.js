@@ -4,15 +4,14 @@ import Container from "@material-ui/core/Container";
 import HeaderEnter from "./HeaderEnter";
 import MainFeaturedPostEnter from "./MainFeaturedPostEnter";
 import Footer from "./blog/Footer";
-import Commentbox from "./homeComponents/CommentBox";
 
 const sections = [
-    { title: 'Electronics', url: '#' },
-    { title: 'Furniture', url: '#' },
-    { title: 'School Stuff', url: '#' },
-    { title: 'Food', url: '#' },
-    { title: 'Clothes', url: '#' },
-    { title: 'Immovables', url: '#' },
+    { title: 'Electronics', url: '/review' },
+    { title: 'Furniture', url: '/review' },
+    { title: 'School', url: '/review' },
+    { title: 'Food', url: '/review' },
+    { title: 'Clothes', url: '/review' },
+    { title: 'Immovables', url: '/review' },
 ];
 
 
@@ -37,7 +36,6 @@ class Home extends Component{
                             <MainFeaturedPostEnter post={mainFeaturedPost} />
 
                         </main>
-                        <Commentbox/>
                     </Container>
                     <Footer title="Welcome" description="" />
         </React.Fragment>)

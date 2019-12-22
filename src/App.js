@@ -7,6 +7,7 @@ import Register from './components/Register'
 import Enter from './components/Enter'
 import Reading from './components/Reading'
 import Profile from './components/Profile'
+import Review from "./components/Review";
 
 class App extends Component{
   render() {
@@ -19,6 +20,7 @@ class App extends Component{
             <Route path="/enter" component={Enter}/>
             <Route path="/reading" component={Reading}/>
             <Route path= "/profile" component={Profile}/>
+            <Route path= "/review" component={Review}/>
           </Router>
 
         </div>
