@@ -1,8 +1,6 @@
 import React from "react";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
-// core components
 import GridItem from "./core/GridItem.js";
 import GridContainer from "./core/GridContainer.js";
 import CustomInput from "./core/CustomInput.js";
@@ -10,7 +8,11 @@ import Card from "./core/Card.js";
 import CardHeader from "./core/CardHeader.js";
 import CardBody from "./core/CardBody.js";
 import Button from '@material-ui/core/Button';
-import Link from '@material-ui/core/Link';
+import NewHeader from "./blog/NewHeader";
+
+const sections = [
+  { title: 'Home', url: '/' }
+];
 
 const styles = {
   cardCategoryWhite: {
@@ -37,6 +39,7 @@ export default function UserProfile() {
   const classes = useStyles();
   return (
     <div>
+      <NewHeader title="RevieWall" sections={sections} />
       <GridContainer>
         <GridItem xs={12} sm={12} md={8}>
           <Card>
@@ -135,7 +138,7 @@ export default function UserProfile() {
                     }}
                     inputProps={{
                       multiline: true,
-                      rows: 5
+                      rows: 1
                     }}
                   />
                 </GridItem>
@@ -145,7 +148,7 @@ export default function UserProfile() {
             
           </Card>
         </GridItem>
-        
+
       </GridContainer>
       
     </div>

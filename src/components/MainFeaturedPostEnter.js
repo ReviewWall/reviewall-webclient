@@ -5,11 +5,6 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
-import post1 from './blog/blog-post.1.md';
-import post2 from './blog/blog-post.2.md';
-import post3 from './blog/blog-post.3.md';
-
-const posts = [post1, post2, post3];
 
 const useStyles = makeStyles(theme => ({
     mainFeaturedPost: {
@@ -58,7 +53,7 @@ export default function MainFeaturedPost(props) {
                         <Typography variant="h5" color="inherit" paragraph>
                             {post.description}
                         </Typography>
-                        <Link variant="subtitle1" href="reading">
+                        <Link variant="subtitle1" href="/">
                             {post.linkText}
                         </Link>
                     </div>

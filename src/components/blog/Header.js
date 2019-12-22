@@ -47,10 +47,10 @@ export default function Header(props) {
                     <SearchIcon />
                 </IconButton>
                 <Button variant="outlined" size="small">
-                <Link href="register">Sign up</Link>
+                <Link href="register">Register</Link>
                 </Button>
                 <Button variant="outlined" size="small">
-                    <Link href="login">Sign in</Link>
+                    <Link href="login">Log in</Link>
                 </Button>
             </Toolbar>
             <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>

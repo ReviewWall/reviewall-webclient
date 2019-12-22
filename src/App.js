@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import './styles/App.css';
-import {BrowserRouter as Router, Route,Link} from "react-router-dom"
+import {BrowserRouter as Router, Route} from "react-router-dom"
 import Home from './components/Home'
-import SignIn from './components/SignIn'
-import Register from './components/SignUp'
-import Blog from './components/blog/Blog'
+import SignIn from './components/Login'
+import Register from './components/Register'
 import Enter from './components/Enter'
 import Reading from './components/Reading'
 import Profile from './components/Profile'
@@ -12,7 +11,7 @@ import Profile from './components/Profile'
 class App extends Component{
   render() {
     return (
-        <div className="App">
+        <div className="App scrollarea">
           <Router>
             <Route exact path="/" component={Home}/>
             <Route path="/login" component={SignIn}/>

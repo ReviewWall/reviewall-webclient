@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import axios from 'axios'
-import {Link} from "react-router-dom";
-
 
 class Register extends Component{
 
@@ -34,17 +32,15 @@ class Register extends Component{
             parola:this.state.termParola,
             email:this.state.termEmail,
             telefonNumarasi:this.state.termTelNo
-        }
+        };
 
         axios.post('http://localhost:8080/kullanicilar', registerData ).then((response) => {
             console.log(response.data);
         });
-    }
-
+    };
 
     render() {
         return (
-
 
             <div className="container">
                         <div className="card bg-light">
@@ -57,21 +53,21 @@ class Register extends Component{
                                         <div className="input-group-prepend">
                                             <span className="input-group-text"> <i className="fa fa-user"></i> </span>
                                         </div>
-                                        <input name="" className="form-control" placeholder="Ad" type="text" onChange={e => this.setState({termAd: e.target.value})}/>
+                                        <input name="" className="form-control" placeholder="Name" type="text" onChange={e => this.setState({termAd: e.target.value})}/>
                                     </div>
 
                                     <div className="form-group input-group">
                                         <div className="input-group-prepend">
                                             <span className="input-group-text"> <i className="fa fa-user"></i> </span>
                                         </div>
-                                        <input name="" className="form-control" placeholder="Soyad" type="text" onChange={e => this.setState({termSoyad: e.target.value})}/>
+                                        <input name="" className="form-control" placeholder="Surname" type="text" onChange={e => this.setState({termSoyad: e.target.value})}/>
                                     </div>
 
                                     <div className="form-group input-group">
                                         <div className="input-group-prepend">
                                             <span className="input-group-text"> <i className="fa fa-user"></i> </span>
                                         </div>
-                                        <input name="" className="form-control" placeholder="Kullanıcı Adı" type="text" onChange={e => this.setState({termKullaniciAdi: e.target.value})}/>
+                                        <input name="" className="form-control" placeholder="Username" type="text" onChange={e => this.setState({termKullaniciAdi: e.target.value})}/>
                                     </div>
 
                                     <div className="form-group input-group">
@@ -87,14 +83,14 @@ class Register extends Component{
                                             <span className="input-group-text"> <i className="fa fa-phone"></i> </span>
                                         </div>
 
-                                        <input name="" className="form-control" placeholder="Telefon Numarası" type="text" onChange={e => this.setState({termTelNo: e.target.value})}/>
+                                        <input name="" className="form-control" placeholder="Phone Number" type="text" onChange={e => this.setState({termTelNo: e.target.value})}/>
                                     </div>
 
                                     <div className="form-group input-group">
                                         <div className="input-group-prepend">
                                             <span className="input-group-text"> <i className="fa fa-lock"></i> </span>
                                         </div>
-                                        <input className="form-control" placeholder="Create password" type="password"/>
+                                        <input className="form-control" placeholder="Password" type="password"/>
                                     </div>
 
                                     <div className="form-group input-group">
@@ -109,7 +105,7 @@ class Register extends Component{
                                         </button>
                                     </div>
 
-                                    <p className="text-center">Have an account? <a href="/login">Sign In</a></p>
+                                    <p className="text-center">Have an account? <a href="/login">Log in</a></p>
                                 </form>
                             </article>
                         </div>
