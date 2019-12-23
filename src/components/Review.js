@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Commentbox from "./CommentBox";
-import NewHeader from "./blog/NewHeader";
+import NewHeader from "./home/NewHeader";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 const sections = [

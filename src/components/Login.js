@@ -10,7 +10,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import Checkbox from '@material-ui/core/Checkbox';
 import { withStyles } from '@material-ui/core/styles';
-import NewHeader from "./blog/NewHeader";
+import NewHeader from "./home/NewHeader";
 
 const sections = [
     { title: 'Home', url: '/' }

@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import HeaderEnter from "./HeaderEnter";
-import Footer from "./blog/Footer";
+import Footer from "./home/Footer";
 import ReactMd from 'react-md-file';
 const sections = [
     { title: 'Electronics', url: '#' },

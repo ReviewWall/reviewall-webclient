@@ -3,7 +3,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import HeaderEnter from "./HeaderEnter";
 import MainFeaturedPostEnter from "./MainFeaturedPostEnter";
-import Footer from "./blog/Footer";
+import Footer from "./home/Footer";
 
 const sections = [
     { title: 'Electronics', url: '/review' },

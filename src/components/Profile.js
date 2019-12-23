@@ -8,7 +8,7 @@ import Card from "./core/Card.js";
 import CardHeader from "./core/CardHeader.js";
 import CardBody from "./core/CardBody.js";
 import Button from '@material-ui/core/Button';
-import NewHeader from "./blog/NewHeader";
+import NewHeader from "./home/NewHeader";
 
 const sections = [
   { title: 'Home', url: '/enter' }
